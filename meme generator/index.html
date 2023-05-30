@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - freeCodeCamp Front-end Course: Meme Generator </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Notice how we have used "semantic HTML" here -->
+<!-- Re-read the lesson if you don't understand what that means -->
+<!-- https://www.zachgollwitzer.com/posts/2021/fullstack-developer-series/7-html-crash-course-->
+<main>
+  <section class="content">
+    <!-- Your HTML code goes here -->
+    <h2>Output</h2>
+    <h3 class="ProgramMemes">Programmer Memes</h3>
+    <div class="meme-content">
+      </div>
+    <h3 class="TellSomethingFunny">Tell Me Something Funny</h3>
+     <div class="joke-content">
+      </div>
+    <h3 class="Wisdom">Some widsdom...</h3>
+     <div class="quote-content">
+      </div>
+    <h3 class="Riddle">I want a riddle!</h3>
+     <div class="riddle-content">
+      </div>
+  </section>
+  
+  
+  <!-- No need to change anything in this section -->
+  <section class="sidebar">
+    <h2>Actions</h2>
+    <button onclick="showMeme()">Show a Meme</button>
+    <button onclick="showJoke()">Tell Me a Joke</button>
+    <button onclick="showQuote()">Random Quote</button>
+    <button onclick="showRiddle()">Riddle me</button>
+    <button class="reveal-btn" onclick="revealAnswers()">Reveal Riddle Answer</button>
+    <p class="attribution">Code challenge by <a href="https://www.twitter.com/zg_dev" target="_top">@zg_dev</a></p> 
+  </section>
+</main>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
