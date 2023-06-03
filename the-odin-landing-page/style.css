@@ -1,0 +1,306 @@
+html {
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  font-size: 16px
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0
+}
+
+*,
+:after,
+:before {
+  box-sizing: inherit
+}
+
+img {
+  width: 100%
+}
+
+a,
+p {
+  color: #bac5d7
+}
+
+footer {
+  padding: 2em 0
+}
+
+footer a {
+  font-size: .8em;
+  word-spacing: .1em;
+  text-decoration: none
+}
+
+.header-right-side a {
+  text-decoration: none;
+  padding-bottom: 1px;
+  position: relative
+}
+
+.info,
+footer {
+  text-align: center
+}
+
+.cta,
+.cta-container,
+.header,
+.header-hero,
+.header-right-side,
+.hero,
+.hero-left-side,
+.img-container,
+.quote-container,
+.thumbnail {
+  display: flex
+}
+
+.header-hero,
+footer {
+  background: #1f2937
+}
+
+.cta-btn,
+.cta-btn-bottom,
+.hero-text,
+.left-text p {
+  color: #f9faf8
+}
+
+.header-hero {
+  color: #bac5d7;
+  flex-direction: column;
+  padding: 1em
+}
+
+.header {
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em 0
+}
+
+.header h1 {
+  font-size: 2em;
+  letter-spacing: .1em;
+  margin: 0
+}
+
+.header-right-side,
+.hero {
+  gap: 1em
+}
+
+.header-right-side a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transform: translateY(3px);
+  background: #f9faf8;
+  transition: opacity .2s ease, transform .2s ease
+}
+
+.header-right-side a:hover::after {
+  opacity: 1;
+  transform: translateY(0)
+}
+
+.hero {
+  padding: 2em 0 0
+}
+
+.hero,
+.hero-left-side {
+  flex-direction: column
+}
+
+.hero-text {
+  display: block;
+  font-size: 3em;
+  font-weight: 900
+}
+
+.hero-subtext {
+  margin: 2em 0
+}
+
+.cta-btn {
+  border: 0
+}
+
+.cta-btn,
+.cta-btn-bottom {
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  height: 40px;
+  width: 150px
+}
+
+.cta-btn {
+  background: #3882f6
+}
+
+.cta-btn-bottom:hover,
+.cta-btn:hover {
+  transform: scale(1.1)
+}
+
+.hero img {
+  margin: 1em 0
+}
+
+.info-header {
+  color: #bb871e;
+  display: block;
+  font-size: 2.2em;
+  font-weight: 900;
+  padding: 1em 0 .5em
+}
+
+.img-container,
+.thumbnail {
+  flex-direction: column
+}
+
+.quote-container,
+.thumbnail {
+  align-items: center;
+  padding: 0 3em
+}
+
+.thumbnail img {
+  border-radius: 10px;
+  object-fit: cover;
+  width: 230px;
+  height: 230px
+}
+
+.quote-container {
+  background: #f1f1e6;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5em 1em
+}
+
+.quote-text {
+  color: #bb871e;
+  font-size: 1.2em;
+  font-weight: 300;
+  font-style: italic;
+  padding: 1em 0
+}
+
+.quote-author {
+  color: #4c5666;
+  display: block;
+  font-weight: 900
+}
+
+.cta {
+  height: 25vh;
+  align-items: center;
+  justify-content: center;
+  padding: 1em
+}
+
+.cta-container {
+  background: #3882f6;
+  border-radius: 10px;
+  color: #f1f1e6;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em 2em
+}
+
+.left-text span {
+  font-size: 1.3em
+}
+
+.left-text p {
+  font-size: .9em
+}
+
+.cta-btn-bottom {
+  background: 0 0;
+  border: 2px solid #fff
+}
+
+@media (min-width:700px) {
+  .header-hero {
+    padding: 1em 10em
+  }
+
+  .header-right-side {
+    gap: 3em
+  }
+
+  .hero {
+    flex-direction: row;
+    align-items: center
+  }
+
+  .hero-left-side {
+    flex: 50%
+  }
+
+  .hero img {
+    width: 50%
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em 1em
+  }
+
+  .img-container {
+    flex-direction: row;
+    gap: .75em;
+    margin: 2em 15em
+  }
+
+  .thumbnail {
+    padding: 0 2em;
+    align-items: center;
+    justify-content: center
+  }
+
+  .thumbnail img {
+    border-radius: 10px;
+    object-fit: cover;
+    width: 150px;
+    height: 150px
+  }
+
+  .quote-container {
+    position: relative
+  }
+
+  .quote-author {
+    position: absolute;
+    bottom: 25%;
+    right: 21%
+  }
+
+  .cta {
+    height: 35vh
+  }
+
+  .cta-container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    padding: 2em 1em
+  }
+}
