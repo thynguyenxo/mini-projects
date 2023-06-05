@@ -1,0 +1,89 @@
+html {
+  background: #EAF4F4;
+  box-sizing: border-box;
+  font-family: 'VT323', monospace;
+  letter-spacing: 0.2em;
+  word-spacing: 0.25em;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  place-content: center;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1,
+p {
+  color: #6B9080;
+}
+
+h1 {
+  font-family: 'Concert One', cursive;
+  letter-spacing: 0.25rem;
+}
+
+h1,
+footer {
+  text-align: center;
+}
+
+img {
+  display: inline-block;
+  width: 40px;
+}
+
+button {
+  background: #A4C3B2;
+  border: none;
+  border-radius: 15px;
+  color: #F6FFF8;
+  font-family: 'VT323', monospace;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+  padding: .5em 1em;
+}
+
+button,
+#grid-size-slider {
+  cursor: pointer;
+}
+
+footer {
+  padding: 2em 0
+}
+
+footer a {
+  color: #6B9080;
+  text-decoration: none;
+}
+
+.slider-container,
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin: 1em 0
+}
+
+#grid-size-slider {
+  cursor: pointer;
+}
+
+#sketchpad {
+  background: #A4C3B2;
+  display: grid;
+  width: 500px;
+  height: 500px;
+}
