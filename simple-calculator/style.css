@@ -1,0 +1,136 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  gap: 1em
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+button {
+  background: #BDE0FE;
+  border: none;
+  cursor: pointer;
+  padding: 1.5em;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+
+}
+
+.grid {
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.output {
+  background: #FFC8DD;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  grid-area: 1 / 1 / 2 / 5;
+  word-break: break-all;
+  word-wrap: break-word;
+
+}
+
+.btn--all-clear,
+.btn--del,
+.btn--equal {
+  font-weight: bold;
+}
+
+
+.btn--all-clear {
+  grid-area: 2 / 1 / 3 / 3;
+  background: #85C4FF;
+}
+
+.btn--del {
+  background: #A2D2FF;
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.btn--divide {
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+.btn--1 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.btn--2 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.btn--3 {
+  grid-area: 3 / 3 / 4 / 4;
+}
+
+.btn--multiply {
+  grid-area: 3 / 4 / 4 / 5;
+}
+
+.btn--4 {
+  grid-area: 4 / 1 / 5 / 2;
+}
+
+.btn--5 {
+  grid-area: 4 / 2 / 5 / 3;
+}
+
+.btn--6 {
+  grid-area: 4 / 3 / 5 / 4;
+}
+
+.btn--plus {
+  grid-area: 4 / 4 / 5 / 5;
+}
+
+.btn--7 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.btn--8 {
+  grid-area: 5 / 2 / 6 / 3;
+}
+
+.btn--9 {
+  grid-area: 5 / 3 / 6 / 4;
+}
+
+.btn--minus {
+  grid-area: 5 / 4 / 6 / 5;
+}
+
+.btn--decimal {
+  grid-area: 6 / 1 / 7 / 2;
+}
+
+.btn--zero {
+  grid-area: 6 / 2 / 7 / 3;
+}
+
+.btn--equal {
+  background: #CDB4DB;
+  grid-area: 6 / 3 / 7 / 5;
+}
