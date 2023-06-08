@@ -111,7 +111,7 @@ function keyboardInput(event) {
   if (event.key >= 0 && event.key <= 9) {
     appendNumber(event.key.toString()); //passing string type of the key-typed number into the function
   } else if (event.key === '+' || event.key === '-' || event.key === '*' || event.key === '/') {
-    addOperator(convertOperator(key));
+    addOperator(convertOperator(event.key));
   } else if (event.key === '.') {
     addDecimalPoint();
   } else if (event.key === 'Enter' || event.key === '=') {
