@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NORO | The journey awaits...</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Carrois+Gothic+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="icon" type="image/x-icon" href="./top-favicon.png">
+</head>
+
+<body>
+  <main>
+    <section class='sidebar'>
+      <span>NORO</span>
+      <p>photo by <a href="https://unsplash.com/@jareddrice">Jared Rice</a> on <a
+          href="https://unsplash.com/photos/NTyBbu66_SI">Unsplash</a></p>
+    </section>
+    <section class="main">
+      <section class="top">
+        <p class="'description">Mauris a lectus hendrerit, ornare ipsum commodo, ullamcorper neque. Nullam arcu lectus,
+          bibendum vitae
+          interdum ac,
+          consequat vel enim. Phasellus maximus libero risus, non congue eros auctor a. Cras vulputate, ligula id porta
+          tincidunt,
+          augue nunc ornare orci, nec egestas lorem ipsum volutpat dui. Quisque gravida nisl interdum, faucibus felis
+          eu,
+          aliquam
+          elit.
+        </p>
+        <span class="cta">Sign up for our yoga retreat.</span>
+      </section>
+      <section class="bottom">
+        <span class="tagline">The journey awaits...</span>
+        <form id="userForm" onsubmit="submitForm(event)">
+          <div>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required>
+          </div>
+          <div>
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" oninput="validateEmail()" required>
+            <span id="emailError" class="error">
+            </span>
+          </div>
+          <div>
+            <label for="phoneNumber">Phone Number</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" required>
+            <span id="phoneError" class="error"></span>
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <span id="passwordError" class="error">
+            </span>
+          </div>
+          <div>
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" oninput="validatePassword()" required>
+            <span id="passwordError" class="error">
+            </span>
+          </div>
+          <button type="submit">Sign up</button>
+        </form>
+        <span class="login-account">Already have an account? <a href="">Log in</a></span>
+      </section>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/ab4f970c7c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

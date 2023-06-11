@@ -94,8 +94,7 @@ function compute() {
     return;
   }
   secondOperand = currentOperand.textContent;
-  let result = roundNumber(operate(selectedOperator, firstOperand, secondOperand));
-  currentOperand.textContent = result;
+  currentOperand.textContent = roundNumber(operate(selectedOperator, firstOperand, secondOperand));
   previousOperand.textContent = `${firstOperand} ${selectedOperator} ${secondOperand} =`;
   selectedOperator = null;
 }

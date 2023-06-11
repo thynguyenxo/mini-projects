@@ -1,0 +1,197 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Cardo', serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+main,
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin: 0.5em 0;
+}
+
+input {
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #d5987f;
+  display: block;
+  outline: none;
+}
+
+input:focus {
+  border-color: #864940;
+}
+
+button {
+  background: #e07143;
+  border: none;
+  border-radius: 10px;
+  color: #fff7f2;
+  cursor: pointer;
+  font-family: 'Cardo', serif;
+  padding: 0.8em 5em;
+  margin: 2em 0 0.5em;
+  text-transform: uppercase;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: 0.4s ease;
+}
+
+.sidebar {
+  background-image: url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1099&q=80');
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 54vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.sidebar span {
+  color: white;
+  font-family: 'Carrois Gothic SC', sans-serif;
+  font-size: 2em;
+  letter-spacing: 0.2em;
+}
+
+.sidebar p {
+  color: white;
+  position: absolute;
+  bottom: -1em;
+  font-size: 0.65rem;
+  text-transform: lowercase;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.main {
+  background: #fff7f2;
+}
+
+.main span {
+  display: block;
+}
+
+.main p {
+  font-size: 1.1em;
+  padding: 1em 0;
+  margin: 0 1.5em 2em;
+  text-align: center;
+}
+
+.cta,
+.tagline {
+  font-size: 1.25em;
+  text-align: center;
+}
+
+.bottom {
+  margin: 1em;
+  min-height: 80vh;
+}
+
+.cta {
+  margin: 1em 0 4em;
+}
+
+.tagline {
+  margin: 1em 0 3em;
+  scroll-snap-align: start;
+}
+
+#userForm {
+  display: grid;
+  justify-items: center;
+}
+
+#userForm div {
+  padding: 0.25em 0;
+}
+
+.login-account {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.login-account a {
+  color: #d5987f;
+  text-decoration: none;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+  margin: 1em 0;
+  transition: 0.3s ease;
+}
+
+
+@media (min-width: 1000px) {
+  button {
+    position: relative;
+    left: 11em;
+    margin: 4em 0 0.3em
+  }
+
+  main,
+  .sidebar {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sidebar {
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .main p {
+    margin: 3em 0;
+  }
+
+  .cta {
+    margin: auto;
+  }
+
+  .tagline {
+    margin: 2em 0 1em;
+  }
+
+  .top {
+    min-height: auto;
+  }
+
+  .bottom {
+    min-height: auto;
+    padding: 0;
+  }
+
+  #userForm {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0 10em
+  }
+}
