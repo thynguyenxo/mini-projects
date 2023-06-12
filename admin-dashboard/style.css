@@ -17,13 +17,6 @@ body {
   box-sizing: inherit;
 }
 
-main {
-  display: grid;
-  grid-template-columns: 15vw auto;
-  grid-template-rows: 17vh auto;
-  height: 100%;
-}
-
 h2 {
   font-size: 1.1rem;
   margin: 1em 0 0.25em;
@@ -56,18 +49,26 @@ img {
   width: 40px;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
 
+button,
+.right-navbar {
+  display: none;
+}
 
 .sidebar,
-.sidebar a {
+.sidebar a,
+.left-navbar i {
   color: #FFFFFF
 }
 
 .sidebar {
   background-color: #67568c;
-  grid-area: 1 / 1 / 3 / 2;
+  width: 100%;
   padding: 0.5em 1.5em;
-  width: 15vw;
 }
 
 .top-logo {
@@ -97,27 +98,12 @@ img {
   margin: 0 0.5em
 }
 
-.header {
-  background: #ffff;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  grid-area: 1 / 2 / 2 / 3;
-  display: flex;
-  flex-direction: column;
-}
-
 .navbar,
-.bottom-header,
-.right-navbar,
 .left-bottom-header,
 .right-bottom-header,
 .trending-cards {
   display: flex;
   align-items: center;
-}
-
-.navbar,
-.bottom-header {
-  justify-content: space-between;
 }
 
 .navbar,
@@ -133,44 +119,24 @@ img {
   margin: 0 1em;
   padding: 0 1em;
   height: 2em;
-  width: 47em;
 }
 
-.right-navbar {
-  justify-content: space-around;
-  width: 14em
+.left-navbar {
+  position: relative;
+  bottom: 4em;
+  right: 1.5em;
 }
 
-.user-name {
-  font-size: 0.85rem;
-  font-weight: 700;
+
+.bottom-header {
+  position: relative;
+  bottom: 1em;
+  right: -1em
 }
 
 .bottom-header img {
   height: 50px;
   width: 50px;
-}
-
-.bottom-header .username-handle {
-  display: block;
-  font-size: 1.1em;
-  font-weight: 700;
-}
-
-.right-bottom-header {
-  justify-content: space-between;
-  width: 17em;
-}
-
-.right-bottom-header button {
-  background: #fbdd74;
-  border: none;
-  border-radius: 20px;
-  color: #1f1235;
-  font-family: 'Poppins', sans-serif;
-  font-size: 0.8rem;
-  width: 6em;
-  height: 2.5em
 }
 
 .greeting {
@@ -180,18 +146,7 @@ img {
 }
 
 .content {
-  grid-area: 2 / 2 / 3 / 3;
-  display: flex;
-  gap: 2em;
-  margin: 0 1.5em;
-}
-
-.projects {
-  flex: 70%;
-}
-
-.right-column {
-  flex: 25%;
+  margin: 0 1em;
 }
 
 .cards,
@@ -201,6 +156,7 @@ img {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   border-radius: 15px;
   font-size: 0.75rem;
+  margin: 1em 0;
 }
 
 .cards {
@@ -208,7 +164,6 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 17em;
 }
 
 .project-icons {
@@ -225,13 +180,6 @@ img {
 .announcement-grid,
 .trending-container {
   padding: 2em
-}
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  /* grid-template-rows: repeat(3, 1fr); */
-  gap: 1.5rem;
 }
 
 .trending-container {
@@ -251,4 +199,106 @@ img {
 .user-info-handle {
   cursor: pointer;
   font-weight: 700;
+}
+
+@media (min-width: 1100px) {
+  main {
+    display: grid;
+    grid-template-columns: 15vw auto;
+    grid-template-rows: 17vh auto;
+    height: 100%;
+  }
+
+  .sidebar {
+    grid-area: 1 / 1 / 3 / 2;
+  }
+
+  .header {
+    background: #ffff;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bottom-header,
+  .right-navbar,
+  .left-bottom-header,
+  .right-bottom-header,
+  .trending-cards {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar,
+  .bottom-header {
+    justify-content: space-between;
+  }
+
+  .search-bar {
+    width: 47em;
+  }
+
+  .right-navbar {
+    justify-content: space-around;
+    width: 14em
+  }
+
+  .user-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+
+  .bottom-header .username-handle {
+    display: block;
+    font-size: 1.1em;
+    font-weight: 700;
+  }
+
+  .right-bottom-header {
+    justify-content: space-between;
+    width: 17em;
+  }
+
+  .right-bottom-header button {
+    background: #fbdd74;
+    border: none;
+    border-radius: 20px;
+    color: #1f1235;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    width: 6em;
+    height: 2.5em
+  }
+
+  .greeting {
+    display: block;
+    font-size: 0.85em;
+    margin: 0 1em;
+  }
+
+  .content {
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    gap: 2em;
+  }
+
+  .projects {
+    flex: 70%;
+  }
+
+  .right-column {
+    flex: 25%;
+  }
+
+  .cards {
+    height: 17em;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* grid-template-rows: repeat(3, 1fr); */
+    gap: 1.5rem;
+  }
 }
