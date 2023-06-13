@@ -1,0 +1,138 @@
+html {
+  background: #fffffe;
+  box-sizing: border-box;
+  color: #2d334a;
+  font-family: 'Lora', serif;
+  font-size: 15px;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1,
+button,
+footer {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+button {
+  text-transform: lowercase;
+}
+
+a {
+  color: #ffd803;
+  text-decoration: none;
+}
+
+p {
+  margin: 1em
+}
+
+button {
+  background: #bae8e8;
+  border: none;
+  border-radius: 20px;
+  color: #272343;
+  font-weight: 700;
+  padding: 1em;
+  margin: 0 1em;
+}
+
+input::placeholder {
+  color: #272343;
+  font-family: 'Lora', serif;
+}
+
+label {
+  margin: 0 0.5em
+}
+
+footer {
+  color: #272343;
+  font-size: 0.85em;
+  font-weight: 400;
+  text-align: center;
+}
+
+.header-section,
+.card {
+  background: #272343;
+  color: #fffffe;
+}
+
+.header-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2em;
+  height: 10vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+  height: 80vh;
+}
+
+.card,
+.input-container input,
+.new-book-modal {
+  border-radius: 20px;
+}
+
+.card,
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.card {
+  margin: 1em;
+  padding: 1em;
+  height: 300px;
+  width: 300px;
+}
+
+.input-container input {
+  border: 1px solid #e3f6f5;
+  padding: 1em;
+  margin: 1em 0
+}
+
+.add-book-btn {
+  margin: 1em 0;
+}
+
+.new-book-modal {
+  border: none;
+  padding: 2em;
+}
+
+
+@media(min-width: 750px) {
+  .header-section {
+    padding: 0 5em;
+  }
+
+  .container {
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}

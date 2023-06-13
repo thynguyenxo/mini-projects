@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet">
+  <title>Library App</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="icon" type="image/svg+xml" sizes="any"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>" />
+</head>
+
+<body>
+  <main>
+    <section class="header-section">
+      <h1>Library</h1>
+      <button class="addBooks">Add Book</button>
+    </section>
+    <div class="container">
+    </div>
+    <dialog class="new-book-modal">
+      <form id="newBookForm">
+        <div class="input-container">
+          <input type="text" id="book-title" name="book-title" placeholder="Title" required>
+          <input type="text" id="book-author" name="book-author" placeholder="Author" required>
+          <div>
+            <label for="read-status">Have you read this book?</label>
+            <input type="checkbox" id="read-status" name="read-status">
+          </div>
+          <button id="add-book-btn" type="submit">Add this book</button>
+        </div>
+      </form>
+    </dialog>
+  </main>
+  <footer>
+    <div class="attribution">
+      Copyright &copy; <span class="footer-current-year"></span> Thy Nguyen
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
