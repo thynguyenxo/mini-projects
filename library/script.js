@@ -1,12 +1,14 @@
 let myLibrary = [];
 
-function book(title, author, readStatus) {
-  this.title = title,
-    this.author = author,
+class Book {
+  constructor(title, author, readStatus) {
+    this.title = title;
+    this.author = author;
     this.readStatus = readStatus ? 'Read' : 'Not Read';
-  this.toggleReadStatus = function () {
+  }
+  toggleReadStatus() {
     this.readStatus = this.readStatus === 'Read' ? 'Not Read' : 'Read';
-  };
+  }
 }
 
 function addBookToLibrary() {
@@ -15,13 +17,13 @@ function addBookToLibrary() {
   const userBookAuthor = document.getElementById('book-author').value;
   const userReadStatus = document.getElementById('read-status').checked;
 
-  let checkExistingBook = book => book.title === userBookTitle && book.author === userBookAuthor;
+  let checkExistingBook = book => Book.title === userBookTitle && Book.author === userBookAuthor;
 
   if (myLibrary.some(checkExistingBook)) {
     alert('This book already exists in your library')
   }
   else {
-    let newBook = new book(userBookTitle, userBookAuthor, userReadStatus);
+    let newBook = new Book(userBookTitle, userBookAuthor, userReadStatus);
     myLibrary.push(newBook);
   }
 }
