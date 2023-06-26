@@ -1,0 +1,83 @@
+html {
+  box-sizing: border-box;
+  color: #1b263b;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+html,
+body {
+  background: #e0e1dd;
+  height: 100%;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  color: #415a77;
+  font-family: 'Itim', cursive;
+  font-size: 3rem;
+  margin: 1em 0 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#statusText {
+  font-size: 1rem;
+  margin: 0.5em 0 1em;
+  text-align: center;
+}
+
+.board {
+  background: white;
+  border: none;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 450px;
+  text-align: center;
+  font-size: 100px;
+}
+
+.cell {
+  box-shadow: 0 0 0 5px white;
+  background: #778da9;
+  color: white;
+  width: 150px;
+  height: 150px;
+  line-height: 1.4
+}
+
+.cell:hover {
+  background: #415a77;
+}
+
+.cell,
+#restartButton {
+  cursor: pointer;
+}
+
+#restartButton {
+  background: #415a77;
+  border: 3px solid white;
+  border-radius: 20px;
+  outline: none;
+  color: white;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.3rem;
+  margin: 2em 0;
+  width: 10em;
+  height: 3em;
+}
+
+#restartButton:hover {
+  background: #778da9;
+}
