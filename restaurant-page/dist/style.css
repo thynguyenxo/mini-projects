@@ -1,0 +1,110 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Vollkorn', serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Vollkorn', serif;
+}
+
+nav {
+  min-height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+nav button {
+  margin: 1rem;
+}
+
+img {
+  width: 100%;
+  height: 100%
+}
+
+hgroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin: 1em 2em */
+}
+
+hgroup button {
+  margin: 1em
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+.about h1 {
+  margin: 0 0 1em;
+}
+
+.content {
+  margin: 1.5em
+}
+
+.subheader {
+  font-size: 0.75rem;
+  font-style: italic;
+  margin: 0 0 1em;
+  text-transform: lowercase;
+}
+
+.menu-description, .price {
+  padding: 1em
+}
+
+.price, .div-title, .subheader, .menu-description, .menu-item, .info h3, .info p {
+  text-align: center;
+}
+
+.menu-div {
+  margin: 2em
+}
+
+.menu h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+.menu h3 {
+  margin: 1em 0 0
+}
+
+.menu p {
+  margin: 0
+}
+
+.info h3 {
+  margin: 5em 0 0
+}
+
+@media (min-width: 800px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    margin: 1.5em
+  }
+}
