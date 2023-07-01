@@ -23,7 +23,7 @@ button {
 }
 
 nav {
-  min-height: 15vh;
+  min-height: 10vh;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -42,7 +42,6 @@ hgroup {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin: 1em 2em */
 }
 
 hgroup button {
@@ -79,7 +78,7 @@ h1 {
 }
 
 .menu-div {
-  margin: 2em
+  margin: 4em
 }
 
 .menu h2 {
@@ -99,12 +98,136 @@ h1 {
 }
 
 @media (min-width: 800px) {
-  .home {
-    display: flex;
-    flex-direction: column;
+  .content {
+    margin: 0
   }
 
-  .content {
-    margin: 1.5em
+  .home {
+    display: flex;
+    flex-direction: row;
+  }
+
+  hgroup {
+    flex-basis: 50%;
+    margin: 5em 2em
+  }
+
+  .about p {
+    margin: 1em 20em
+  }
+
+  .menu-description {
+    margin: 0 25em
+  }
+
+  button,
+  button *,
+  button :after,
+  button :before,
+  button:after,
+  button:before {
+    border: 0 solid;
+    box-sizing: border-box;
+  }
+
+  button {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: button;
+    background-color: #000;
+    background-image: none;
+    color: black;
+    cursor: pointer;
+    margin: 0;
+    -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+    padding: 0;
+  }
+
+  button:disabled {
+    cursor: default;
+  }
+
+  button:-moz-focusring {
+    outline: auto;
+  }
+
+  button svg {
+    display: block;
+    vertical-align: middle;
+  }
+
+  button [hidden] {
+    display: none;
+  }
+
+  button {
+    --thickness: 1px;
+    background: none;
+    box-sizing: border-box;
+    -webkit-clip-path: polygon(0 0,
+        100% 0,
+        100% calc(100% + var(--thickness)),
+        0 calc(100% + var(--thickness)));
+    clip-path: polygon(0 0,
+        100% 0,
+        100% calc(100% + var(--thickness)),
+        0 calc(100% + var(--thickness)));
+    display: block;
+    font-weight: 900;
+    -webkit-mask-image: none;
+    padding: 2px 0;
+    position: relative;
+  }
+
+  button:before {
+    background: black;
+    bottom: calc(var(--thickness) * -1);
+    content: "";
+    display: block;
+    height: var(--thickness);
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+  }
+
+  button:hover:before {
+    -webkit-animation: slide 0.5s ease;
+    animation: slide 0.5s ease;
+  }
+
+  @-webkit-keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+
+    50% {
+      transform: translateX(100%);
+    }
+
+    51% {
+      transform: translateX(-100%);
+    }
+
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+
+    50% {
+      transform: translateX(100%);
+    }
+
+    51% {
+      transform: translateX(-100%);
+    }
+
+    to {
+      transform: translateX(0);
+    }
   }
 }
