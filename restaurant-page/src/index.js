@@ -10,40 +10,28 @@ function createNav() {
   const homeButton = document.createElement('button');
   homeButton.textContent = 'Home';
   homeButton.classList.add('nav-btn');
-  homeButton.addEventListener('click', (e) => {
-    if (e.target.classList.contains('active')) {
-      return;
-    }
+  homeButton.addEventListener('click', () => {
     renderHomePage();
   });
 
   const aboutButton = document.createElement('button');
   aboutButton.textContent = 'About';
   aboutButton.classList.add('nav-btn');
-  aboutButton.addEventListener('click', (e) => {
-    if (e.target.classList.contains('active')) {
-      return;
-    }
+  aboutButton.addEventListener('click', () => {
     renderAboutUs();
   });
 
   const menuButton = document.createElement('button');
   menuButton.textContent = 'Menu';
   menuButton.classList.add('nav-btn');
-  menuButton.addEventListener('click', (e) => {
-    if (e.target.classList.contains('active')) {
-      return;
-    }
+  menuButton.addEventListener('click', () => {
     renderMenuPage();
   });
 
   const contactButton = document.createElement('button');
   contactButton.textContent = 'Contact';
   contactButton.classList.add('nav-btn');
-  contactButton.addEventListener('click', (e) => {
-    if (e.target.classList.contains('active')) {
-      return;
-    }
+  contactButton.addEventListener('click', () => {
     renderContactPage();
   });
 
@@ -76,7 +64,7 @@ function createNav() {
             buttons.forEach((btn) => {
               btn.style.display = 'none';
             });
-          };
+          }
         }
       };
     });

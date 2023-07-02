@@ -17,11 +17,13 @@ function createContact() {
   const weekDay = document.createElement('p');
   weekDay.textContent = 'Sunday - Wednesday';
   const weekDayHour = document.createElement('p');
+  weekDayHour.classList.add('opening-hours');
   weekDayHour.textContent = '5:00 PM - 10:00 PM';
 
   const weekEnd = document.createElement('p');
   weekEnd.textContent = 'Thursday - Saturday';
   const weekEndHour = document.createElement('p');
+  weekEndHour.classList.add('opening-hours');
   weekEndHour.textContent = '5:00 PM - midnight';
 
   info.appendChild(openingHourTitle);
