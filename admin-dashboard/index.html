@@ -18,54 +18,59 @@
   <main>
     <section class="sidebar">
       <div class="top-logo">
-        <i class="fa-solid fa-user-astronaut fa-2xl" style="color: #fffeff;"></i>
-        <span>Dashboard</span>
+        <div class="leftside">
+          <i class="fa-solid fa-user-astronaut fa-2xl" style="color: #fffeff;"></i>
+          <span>Dashboard</span>
+        </div>
+        <i id="menu-icon" class="fa-solid fa-bars"></i>
       </div>
-      <div class="middle-icons">
-        <div>
-          <i class="fa-solid fa-house" style="color: #fffeff;"></i>
-          <a href="">Home</a>
+      <div class="sidebar-icons">
+        <div class="middle-icons">
+          <div>
+            <i class="fa-solid fa-house" style="color: #fffeff;"></i>
+            <a href="">Home</a>
+          </div>
+          <div>
+            <i class="fa-regular fa-address-card" style="color: #fffeff;"></i>
+            <a href="">Profile</a>
+          </div>
+          <div>
+            <i class="fa-regular fa-message" style="color: #fffeff;"></i>
+            <a href="">Messages</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-clock" style="color: #fffeff;"></i>
+            <a href="">History</a>
+          </div>
+          <div>
+            <i class="fa-regular fa-square-check" style="color: #fffeff;"></i>
+            <a href="">Tasks</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-users" style="color: #fffeff;"></i>
+            <a href="">Communities</a>
+          </div>
         </div>
-        <div>
-          <i class="fa-regular fa-address-card" style="color: #fffeff;"></i>
-          <a href="">Profile</a>
-        </div>
-        <div>
-          <i class="fa-regular fa-message" style="color: #fffeff;"></i>
-          <a href="">Messages</a>
-        </div>
-        <div>
-          <i class="fa-solid fa-clock" style="color: #fffeff;"></i>
-          <a href="">History</a>
-        </div>
-        <div>
-          <i class="fa-regular fa-square-check" style="color: #fffeff;"></i>
-          <a href="">Tasks</a>
-        </div>
-        <div>
-          <i class="fa-solid fa-users" style="color: #fffeff;"></i>
-          <a href="">Communities</a>
-        </div>
-      </div>
-      <div class="bottom-icons">
-        <div>
-          <i class="fa-solid fa-gear" style="color: #fffeff;"></i>
-          <a href="">Settings</a>
-        </div>
-        <div>
-          <i class="fa-regular fa-circle-question" style="color: #fffeff;"></i>
-          <a href="">Support</a>
-        </div>
-        <div>
-          <i class="fa-solid fa-user-shield" style="color: #fffeff;"></i>
-          <a href="">Privacy</a>
+        <div class="bottom-icons">
+          <div>
+            <i class="fa-solid fa-gear" style="color: #fffeff;"></i>
+            <a href="">Settings</a>
+          </div>
+          <div>
+            <i class="fa-regular fa-circle-question" style="color: #fffeff;"></i>
+            <a href="">Support</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-user-shield" style="color: #fffeff;"></i>
+            <a href="">Privacy</a>
+          </div>
         </div>
       </div>
     </section>
     <section class="header">
       <div class="navbar">
         <div class="left-navbar">
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
           <input class="search-bar" type="text" placeholder="Search" />
         </div>
         <div class="right-navbar">
@@ -213,6 +218,27 @@
       </div>
     </section>
   </main>
+  <script>
+    function mobileMenu() {
+      if (document.querySelector('.sidebar-icons').style.display == 'block') {
+        document.querySelector('.sidebar-icons').style.display = 'none';
+      } else {
+        document.querySelector('.sidebar-icons').style.display = 'block';
+      }
+    }
+    document.getElementById('menu-icon').addEventListener('click', mobileMenu);
+
+    function resetMenu() {
+      if (window.innerWidth >= 1100) {
+        document.document.querySelector('.sidebar-icons').style.display = 'block';
+      } else {
+        document.querySelector('.sidebar-icons').style.display = 'none';
+      }
+    }
+    wind.addEventListener('load', resetMenu);
+
+
+  </script>
 </body>
 
 </html>
