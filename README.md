@@ -24,42 +24,42 @@ To see all completed projects, please scroll up and refer to the folders in this
 
 
 ## Sign-up form
-![sign-up-form-desktop-preview](/top-mini-projects/sign-up-form/SCR-20230709-mtnc.png)
+![sign-up-form-desktop-preview](/sign-up-form/SCR-20230709-mtnc.png)
 
 - ⚙️ Built with HTML, CSS, and JavaScript
 - 🔗 Live demo: [Link here](https://thynguyenxo.github.io/the-odin-project/sign-up-form/index.html)
 
 
 ## Admin dashboard
-![admin-dashboard-desktop-preview](/top-mini-projects/admin-dashboard/images/SCR-20230709-muii.png)
+![admin-dashboard-desktop-preview](/admin-dashboard/images/SCR-20230709-muii.png)
 
 - ⚙️ Built with HTML and CSS
 - 🔗 Live demo: [Link here](https://thynguyenxo.github.io/the-odin-project/admin-dashboard/index.html)
 
 
 ## Etch-a-sketch
-![etch-a-sketch-desktop-preview](/top-mini-projects/etch-a-sketch/SCR-20230709-mvmj.png)
+![etch-a-sketch-desktop-preview](/etch-a-sketch/SCR-20230709-mvmj.png)
 
 - ⚙️ Built with HTML, CSS, and JavaScript
 - 🔗 Live demo: [Link here](https://thynguyenxo.github.io/the-odin-project/etch-a-sketch/index.html)
 
 
 ## Library App
-![library-desktop-preview](/top-mini-projects/library/SCR-20230709-mwbs.png)
+![library-desktop-preview](/library/SCR-20230709-mwbs.png)
 
 - ⚙️ Built with HTML, CSS, and JavaScript
 - 🔗 Live demo: [Link here](https://thynguyenxo.github.io/the-odin-project/library/index.html)
 
 
 ## Tic Tac Toe
-![tic-tac-toe-desktop-preview](/top-mini-projects/tic-tac-toe/SCR-20230709-mwmz.png)
+![tic-tac-toe-desktop-preview](/tic-tac-toe/SCR-20230709-mwmz.png)
 
 - ⚙️ Built with HTML, CSS, and JavaScript
 - 🔗 Live demo: [Link here](https://thynguyenxo.github.io/the-odin-project/tic-tac-toe/index.html)
 
 
 ## Restaurant page
-![restaurant-page-desktop-preview](/top-mini-projects/restaurant-page/SCR-20230709-mwva.png)
+![restaurant-page-desktop-preview](/restaurant-page/SCR-20230709-mwva.png)
 
 - ⚙️ Built with HTML, CSS, and JavaScript
 - 🔗 Live demo: [Link here](https://thynguyenxo.github.io/the-odin-project/restaurant-page/index.html)
