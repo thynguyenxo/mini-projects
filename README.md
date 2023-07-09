@@ -17,7 +17,7 @@ To see all completed projects, please scroll up and refer to the folders in this
 ---
 
 ## Classic landing page
-![the-odin-landing-page-desktop-preview](/top-mini-projects/the-odin-landing-page/images/SCR-20230709-mswr.png)
+![the-odin-landing-page-desktop-preview](/the-odin-landing-page/images/SCR-20230709-mswr.png)
 
 - ⚙️ Built with HTML and CSS
 - 🔗 Live demo: [Link here](https://thynguyenxo.github.io/the-odin-project/the-odin-landing-page/index.html)
